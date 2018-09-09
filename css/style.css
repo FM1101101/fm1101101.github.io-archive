@@ -54,26 +54,8 @@ header {
     background-image: url(../img/background.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
-    background-color: #999;
-    margin-bottom: 4em;
-    text-align: center;
-    height: 500px;
-}
-
-header.replace {
-    background-attachment: fixed;
-    background-image: url(../img/highcompress-background.jpeg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-color: #999;
+    background-color: #153e7e;
     margin-bottom: 4em;
     text-align: center;
     height: 500px;
