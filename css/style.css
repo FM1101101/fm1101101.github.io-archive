@@ -16,8 +16,12 @@ body {
 h1,
 h2,
 h3 {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
+}
+
+.arabic {
+    font-family: 'Amiri', serif;
 }
 
 a {
@@ -32,6 +36,7 @@ a:hover {
 }
 
 p {
+    font-family: 'Roboto', sans-serif;
     font-size: 1em;
     line-height: 1.8;
     margin-top: 0em;
@@ -70,7 +75,6 @@ header h1 {
     text-shadow: 0 3px 0 rgba(0, 0, 0, 0.5);
     position: relative;
     top: 370px;
-    font-weight: 700;
 }
 
 header p {
@@ -97,17 +101,18 @@ section ol li {
     line-height: 1.8;
 }
 
-footer {
-    padding-bottom: 1em;
-}
-
 footer hr {
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 1em;
 }
 
 .center {
     text-align: center;
+}
+
+.icon {
+    font-size: 100%;
+    letter-spacing: 2px;
 }
 
 @media screen and (min-width: 50em) {
@@ -117,15 +122,18 @@ footer hr {
 
     header h1 {
         font-size: 3.2em;
-        top: 540px;
+        top: 520px;
     }
 
     header p {
-        top: 530px;
+        top: 500px;
         font-size: 1.5em;
     }
-}
 
+    .icon {
+        font-size: 150%;
+    }
+}
 
 /* ------------------- Grid -------------------*/
 
@@ -175,7 +183,7 @@ footer hr {
     margin-right: auto;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
     .grid-1 {
         width: 16.6666666%;
     }
@@ -230,58 +238,6 @@ footer hr {
     }
 }
 
-
-/* Experience
-.experience [class*="row"] {
-    border-bottom: dotted 1px #ccc;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-.experience h2 {
-    margin-bottom: 0;
-}
-
-.experience h2,
-.experience p {
-    text-align: center;
-}
-
-.experience [class*="row"]:last-of-type {
-    border: none;
-}
-
-@media screen and (min-width: 40em) {
-
-    .experience h2,
-    .experience p {
-        text-align: left;
-    }
-}
-*/
-
-/* Testimonials
-.testimonial {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.testimonial img {
-    height: 4em;
-    border-radius: 3px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-top: 40px;
-}
-
-.testimonial p {
-    font-style: italic;
-    color: #888;
-    margin-top: -15px;
-}
-*/
-
 /* Spotlight */
 .spotlight {
     background-color: #a2c0f0;
@@ -325,7 +281,7 @@ footer hr {
     cursor: pointer;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
     .spotlight {
         padding: 6em;
         text-align: left;
