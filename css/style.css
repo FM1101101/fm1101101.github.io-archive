@@ -55,8 +55,8 @@ hr {
 }
 
 header {
-    background-attachment: fixed;
     background-image: url(../img/background.jpeg);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
