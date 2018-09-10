@@ -115,6 +115,22 @@ footer hr {
     letter-spacing: 2px;
 }
 
+.button {
+    background-color: transparent;
+    border: 3px solid #153e7e;
+    padding: 7px 25px;
+    border-radius: 100px;
+    color: #153e7e;
+    font-size: 1.1em;
+    opacity: .7;
+    margin-bottom: 10px;
+}
+
+.button a:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
 @media screen and (min-width: 50em) {
     header {
         height: 700px;
@@ -263,22 +279,6 @@ footer hr {
 .spotlight p {
     color: #666;
     font-size: 1.1em;
-}
-
-.spotlight a {
-    background-color: transparent;
-    border: 3px solid #153e7e;
-    padding: 7px 25px;
-    border-radius: 100px;
-    color: #153e7e;
-    font-size: 1.1em;
-    opacity: .7;
-    margin-bottom: 10px;
-}
-
-.spotlight a:hover {
-    opacity: 1;
-    cursor: pointer;
 }
 
 @media screen and (min-width: 50em) {
