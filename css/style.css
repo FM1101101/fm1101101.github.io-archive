@@ -11,6 +11,7 @@ body {
   margin: 0;
   background-color: #ebf2fc;
   color: #212121;
+  font-size: 80%;
 }
 
 h1,
@@ -166,46 +167,6 @@ footer hr {
   cursor: pointer;
 }
 
-@media screen and (min-width: 35em) {
-  .cover {
-    height: 768px;
-  }
-
-  .cover h1 {
-    font-size: 3.2em;
-    top: 520px;
-  }
-
-  .cover p {
-    top: 500px;
-    font-size: 1.5em;
-  }
-
-  .icon {
-    font-size: 150%;
-  }
-
-  .button {
-    text-align: left;
-  }
-
-  header {
-    text-align: left;
-  }
-
-  .portrait {
-    margin-right: 20px;
-    margin-left: 0;
-    float: left;
-  }
-
-  footer {
-    margin-top: 50px;
-    margin-bottom: 75px;
-    text-align: left;
-  }
-}
-
 /* ------------------- Grid -------------------*/
 
 .container {
@@ -262,7 +223,88 @@ footer hr {
   margin-right: auto;
 }
 
+/* -------------------Custom Blocks----------------- */
+
+/* Gallery */
+
+.gallery [class*="grid-2"],
+.gallery [class*="grid-3"] {
+  margin-bottom: 1%;
+  margin-top: 1%;
+  width: 50%;
+}
+
+.gallery a img {
+  -webkit-transform: translateZ(0);
+  /* Fix chrome pixel shift */
+  transition: opacity 0.2s ease;
+  opacity: 1;
+}
+
+.gallery a img:hover {
+  opacity: 0.8;
+}
+
+/* Spotlight */
+.spotlight {
+  padding: 3em 1em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+.spotlight img {
+  width: 60%;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 50%;
+}
+
 @media screen and (min-width: 35em) {
+  body {
+    font-size: 100%;
+  }
+
+  .cover {
+    height: 768px;
+  }
+
+  .cover h1 {
+    font-size: 3.2em;
+    top: 520px;
+  }
+
+  .cover p {
+    top: 500px;
+    font-size: 1.5em;
+  }
+
+  .icon {
+    font-size: 150%;
+  }
+
+  .button {
+    text-align: left;
+  }
+
+  header {
+    text-align: left;
+  }
+
+  .portrait {
+    margin-right: 20px;
+    margin-left: 0;
+    float: left;
+  }
+
+  footer {
+    margin-top: 50px;
+    margin-bottom: 75px;
+    text-align: left;
+  }
+
   .grid-1 {
     width: 16.6666666%;
   }
@@ -286,54 +328,11 @@ footer hr {
   .grid-6 {
     width: 100%;
   }
-}
 
-/* -------------------Custom Blocks----------------- */
-
-/* Gallery */
-
-.gallery [class*="grid-2"],
-.gallery [class*="grid-3"] {
-  margin-bottom: 1%;
-  margin-top: 1%;
-  width: 50%;
-}
-
-.gallery a img {
-  -webkit-transform: translateZ(0);
-  /* Fix chrome pixel shift */
-  transition: opacity 0.2s ease;
-  opacity: 1;
-}
-
-.gallery a img:hover {
-  opacity: 0.8;
-}
-
-@media screen and (min-width: 35em) {
   .gallery .grid-2 {
     width: 33.3333333%;
   }
-}
 
-/* Spotlight */
-.spotlight {
-  padding: 3em 1em;
-  margin-top: 3em;
-  margin-bottom: 3em;
-  text-align: center;
-}
-
-.spotlight img {
-  width: 60%;
-  max-width: 250px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  border-radius: 50%;
-}
-
-@media screen and (min-width: 35em) {
   .spotlight {
     padding: 6em;
     text-align: left;
