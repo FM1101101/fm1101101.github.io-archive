@@ -15,14 +15,15 @@ body {
 }
 
 h1,
-h2,
-h3 {
-  font-family: "Roboto Slab", serif;
-  font-weight: 300;
+h2 {
+  font-weight: 900;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
 }
 
-.arabic {
-  font-family: "Roboto Slab", serif;
+h3 {
+  margin-top: 0;
+  margin-bottom: 0.3em;
 }
 
 a {
@@ -37,14 +38,19 @@ a:hover {
 }
 
 p {
-  font-family: "Roboto Slab", serif;
   font-size: 1em;
   line-height: 1.8;
-  margin-top: 0em;
+  margin-top: 0;
+  margin-bottom: 0em;
+  max-width: 650px;
 }
 
 img {
   max-width: 100%;
+}
+
+section {
+  margin-bottom: 50px;
 }
 
 .button {
@@ -177,8 +183,9 @@ footer hr {
 }
 
 .container img {
-  width: 80%;
+  width: 60%;
   max-width: 250px;
+  margin-top: 1em;
   margin-left: auto;
   margin-right: auto;
   display: block;
