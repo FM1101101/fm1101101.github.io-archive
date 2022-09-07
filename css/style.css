@@ -12,6 +12,10 @@ body {
   background-color: #ebf2fc;
   color: #212121;
   font-size: 80%;
+  max-width: 800px;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1,
@@ -89,7 +93,7 @@ header p {
 }
 
 header h1 {
-  margin-top: 2px;
+  margin-top: 0;
   margin-bottom: 0.1em;
 }
 
@@ -175,14 +179,24 @@ footer hr {
 
 /* ------------------- Grid -------------------*/
 
+/*
 .container {
   max-width: 800px;
   width: 92%;
   margin-left: auto;
   margin-right: auto;
 }
+*/
 
-.container img {
+.row {
+  clear: both;
+  margin-right: -1%;
+  margin-left: -1%;
+  background-color: #ebf2fc;
+}
+
+
+.row img {
   width: 60%;
   max-width: 250px;
   margin-top: 1em;
@@ -190,12 +204,6 @@ footer hr {
   margin-right: auto;
   display: block;
   border-radius: 50%;
-}
-
-.row {
-  clear: both;
-  margin-right: -1%;
-  margin-left: -1%;
 }
 
 .row:before,
